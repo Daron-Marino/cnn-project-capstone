@@ -12,7 +12,7 @@ According to the [Congressional Budget office](https://www.cbo.gov/publication/5
 
 After natural distasters like hurricanes, insurance companies are tasked with inspecting property for potential damage, confering with claimants, and determining the amount of money to be paid out.
 
-The overall goal of this project is to build, train, and modify various CNNs to accurately classify satelite images as either including flooding damage or no flooding damage.
+The overall goal of this project is to build, train, and modify various CNNs to accurately classify satellite images as either including flooding damage or no flooding damage.
 
 -----------------------------------------------
 
@@ -20,7 +20,7 @@ The overall goal of this project is to build, train, and modify various CNNs to 
 
 [link to data](https://www.kaggle.com/kmader/satellite-images-of-hurricane-damage)
 
-* The dataset used in my project conains satellite images of Texas after Hurrican Harvey. The images are divided into two classes: `damage` and `no_damage`
+* The dataset used in my project contains satellite images of Texas after Hurricane Harvey. The images are divided into two classes: `damage` and `no_damage`
   * train_another: the training data contains 10000 images (5000 of each class)
   * validation_another: the validation data contains 2000 images (1000 of each class)
   * test_another: this is unbalanced test data with 8000 images of damaged properties and 1000 images of undamaged property
@@ -46,7 +46,7 @@ The data were trained on three different CNN architectures: A somewhat basic CNN
 
 ![DaronNet](visualizations/real-first-cnn.png)
 
-This model contains five convolution layers, three max pooling layers, two dropout layers, and three dense layers. I went with this model architecture to start because the trainable parameters are on the lower end, meaning there isn't a degree of computational overhaul that would overwhelm my local machine.
+This model contains five convolution layers, three max pooling layers, two dropout layers, and three dense layers. I went with this model architecture to start because the trainable parameters are on the lower end, meaning there isn't a degree of computational overhead that would overwhelm my local machine.
 
 ReLu activation functions used for the hidden layers, and the output layer uses a Sigmoid function because we're building a binary classifier. 
 
@@ -118,12 +118,12 @@ It appears that the AlexNet CNN architecture performed the best in being able to
 
   * Predicting Flood Damage:
 
-  ![damage](visualizations/damaged.png)
+  ![damage](visualizations/damage-prediction.png)
 
   * Predicting No Flood Damage:
 
 
-  ![no damage](visualizations/no_damage.png)
+  ![no damage](visualizations/nodamage-prediction.jpg)
 
 
 

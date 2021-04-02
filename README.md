@@ -112,7 +112,22 @@ Both seem to be performing similarly, yielding very inconsistent validation accu
 
 ## Conclusions:
 
-It appears that the AlexNet CNN architecture performed the best in being able to differentiate classes in the validation data. Though ResNet did not perform as well as I hoped, I'm confident additional hyperparameter tuning could yield better results.
+It appears that the AlexNet CNN architecture performed the best in being able to differentiate classes in the validation data. 
+
+* It also performed accurately when making predictions on holdout data:
+
+  * Predicting Flood Damage:
+
+  ![damage](visualizations/damaged.png)
+
+  * Predicting No Flood Damage:
+
+
+  ![no damage](visualizations/no_damage.png)
+
+
+
+Though ResNet did not perform as well as I hoped, I'm confident additional hyperparameter tuning could yield better results.
 
 ## Future Considerations:
 
